@@ -12,7 +12,12 @@ function Header() {
     <header className="headerContainer">
     
     <p>LOGOTIPO</p>
-    <p>Aqui ficará o header com as opçoes</p>
+
+    <div className="headerMenu">
+      <li>Opção 1</li>
+      <li>Opção 2</li>
+      <li>Opção 3</li>
+    </div>
 
     <span>{currentDate}</span>
 </header>
