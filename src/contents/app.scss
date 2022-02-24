@@ -1,0 +1,51 @@
+.bodyHome {
+  display: flex;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 70%;
+  max-width: 1080px;
+  background: var(--gray-100);
+  border-radius: 10px;
+  font-family: Lexend, sans-serif;
+
+  .firstBlock {
+    display: flex;
+    width: 40%;
+    text-align: center;
+    border-right: 1px solid var(--gray-200);
+    justify-content: center;
+    align-items: center;
+
+    .profileContainer {
+      img {
+        border-radius: 100px;
+        border: 3px solid var(--purple-800);
+        width: 150px;
+        padding: 3px;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .secondBlock {
+    width: 60%;
+    padding: 1rem 4rem;
+
+    h1 {
+      text-align: center;
+    }
+
+    .spacer {
+      height: 15px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
