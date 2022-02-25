@@ -1,4 +1,5 @@
 import "./app.scss";
+import data from "../../data.json";
 
 function App() {
   return (
@@ -11,20 +12,17 @@ function App() {
         </div>
       </div>
 
-      <div className="secondBlock">
-        <h1>Coming Soon</h1>
-        <div className="spacer" />
-        <p>
-          I'm a self-taugh student full stack web development 💻 from São Paulo
-          - Brazil. I was a Computer Science student at Universidade São Judas
-          Tadeu in São Paulo and I participated in several Frontend and Backend
-          Development events, almost always performed by Rocketseat 🚀.
-          Currently my main hobby is to create autonomous projects using ReactJs
-          and NodeJs, always keep learning about new technologies and good
-          programming practices. I also always seek to improve myself in the
-          technologies that I already know and improve my knowledge about tools.
-        </p>
-      </div>
+      {data.map((data) => {
+        return (
+          <div className="secondBlock" key={data.id}>
+            <h1>{data.tittle}</h1>
+            <div className="spacer" />
+            <p>{data.description}</p>
+          </div>
+        );
+      })}
+
+      <div key={data.id}></div>
     </div>
   );
 }
